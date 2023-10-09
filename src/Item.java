@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Item {
     private String itemName;
@@ -25,14 +26,22 @@ public class Item {
         this.itemQuantity = newItemQuantity;
     }
 
-    public void addItem(ArrayList<Item> newItemToAdd) {
-        for (Item item : newItemToAdd) {
-            if (item.itemName.equals(this.itemName)) {
-                System.out.println("This item is already on the list");
-                return;
-            }
+    public static void displayShoppingList(){
+        System.out.println("1) Add item");
+        System.out.println("2) Remove item");
+        System.out.println("3) Show items");
+    }
+
+    public static int getNumericInput(){
+        Scanner scan = new Scanner(System.in);
+        try {
+            String i = scan.nextLine();
+            int j = Integer.parseInt(i);
+            return j;
+        } catch (NumberFormatException e){
+            System.out.println("Invalid input. Please enter a number");
+            return getNumericInput();
         }
-        newItemToAdd.add(this);
     }
 
     public String toString() {

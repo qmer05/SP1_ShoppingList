@@ -1,0 +1,10 @@
+        ArrayList<Item> items = new ArrayList<>();
+
+        Item item1 = new Item("milk", 2);
+        Item item2 = new Item("butter", 5);
+        Item item3 = new Item("bread", 1);
+        Item item4 = new Item("butter", 10);
+        Item item5 = new Item("sugar", 10);
+
+                for (Item i : items) {
+                    System.out.println(i);

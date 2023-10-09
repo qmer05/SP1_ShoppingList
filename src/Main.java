@@ -1,22 +1,19 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
         ArrayList<Item> items = new ArrayList<>();
 
-        Item item1 = new Item("milk", 2);
-        Item item2 = new Item("butter", 5);
-        Item item3 = new Item("bread", 1);
-        Item item4 = new Item("butter", 10);
+        System.out.println("Select an option:");
 
-        item1.addItem(items);
-        item2.addItem(items);
-        item3.addItem(items);
-        item4.addItem(items);
+        Item.displayShoppingList();
 
-        for (Item i : items) {
-            System.out.println(i);
+        Scanner scan = new Scanner(System.in);
+
+        int userChoice = Item.getNumericInput();
+
         }
     }
-}
