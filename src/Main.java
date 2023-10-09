@@ -16,8 +16,11 @@ public class Main {
         int userChoice = DataValidator.getNumericInput();
 
         if (userChoice == 1) {
-            ItemHandler.itemToAdd();
-            ItemHandler.itemQuantityToAdd();
+            String newItem = ItemHandler.itemToAdd();
+            int newQuantity = ItemHandler.itemQuantityToAdd();
+            Item item1 = new Item(newItem, newQuantity);
+            items.add(item1);
+            System.out.println("You have added " + newQuantity + " " + newItem + " to the shopping list.");
         }
     }
 }
