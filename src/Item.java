@@ -26,22 +26,10 @@ public class Item {
         this.itemQuantity = newItemQuantity;
     }
 
-    public static void displayShoppingList(){
+    public static void displayShoppingList() {
         System.out.println("1) Add item");
         System.out.println("2) Remove item");
         System.out.println("3) Show items");
-    }
-
-    public static int getNumericInput(){
-        Scanner scan = new Scanner(System.in);
-        try {
-            String i = scan.nextLine();
-            int j = Integer.parseInt(i);
-            return j;
-        } catch (NumberFormatException e){
-            System.out.println("Invalid input. Please enter a number");
-            return getNumericInput();
-        }
     }
 
     public String toString() {

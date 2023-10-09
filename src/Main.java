@@ -13,7 +13,10 @@ public class Main {
 
         Scanner scan = new Scanner(System.in);
 
-        int userChoice = Item.getNumericInput();
+        int userChoice = DataValidator.getNumericInput();
 
+        if (userChoice == 1) {
+            ItemHandler.itemToAdd();
         }
     }
+}
