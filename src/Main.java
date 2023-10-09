@@ -17,6 +17,7 @@ public class Main {
 
         if (userChoice == 1) {
             ItemHandler.itemToAdd();
+            ItemHandler.itemQuantityToAdd();
         }
     }
 }

@@ -9,10 +9,13 @@ public class ItemHandler {
         String userInput = scan.nextLine();
     }
 
-    public static void addItemToList(String addThisItem){
-
-
+    public static void itemQuantityToAdd(){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Type the quantity to add");
+        int userInput = DataValidator.getNumericInput();
     }
 
+    public static void addItemToList(String addThisItem){
+    }
 }
 
