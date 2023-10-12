@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class UserInterface {
 
-    public static void returnToDisplayMenu(){
+    public static void returnToDisplayMenu() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Type x to return to options menu");
         String userInput = scan.nextLine();
-        if(userInput.equals("x")){
+        if (userInput.equals("x")) {
             displayShoppingList();
         }
     }
@@ -17,10 +17,14 @@ public class UserInterface {
         System.out.println("3) Show items");
     }
 
-    public static int userInputMenu(){
+    public static int userInputMenu() {
         Scanner scan = new Scanner(System.in);
         int userChoice = DataValidator.getNumericInput();
         return userChoice;
     }
 
-}
+    public static void optionsChoice() {
+        }
+    }
+
+
