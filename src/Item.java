@@ -26,12 +26,6 @@ public class Item {
         this.itemQuantity = newItemQuantity;
     }
 
-    public static void displayShoppingList() {
-        System.out.println("1) Add item");
-        System.out.println("2) Remove item");
-        System.out.println("3) Show items");
-    }
-
     public String toString() {
         return "Item: " + itemName + "\tQuantity: " + itemQuantity;
     }
